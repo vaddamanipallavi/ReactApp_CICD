@@ -1,7 +1,9 @@
+// vite.config.js
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
+import react from '@vitejs/plugin-react'
 
+// Replace `your-repo-name` with your GitHub repo name
 export default defineConfig({
-  base: '/ReactApp_CICD/',
   plugins: [react()],
+  base: '/ReactApp_CICD/', // 👈 
 })
